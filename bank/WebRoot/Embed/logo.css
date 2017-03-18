@@ -1,0 +1,13 @@
+*{
+	font-family: '微软雅黑' !important;
+}
+.logo_text{
+	color: white;
+	font-size: 24px;
+}
+.mr10 a:hover{
+	color: white;
+}
+.mr10 a{
+	color: #2a6496;
+}

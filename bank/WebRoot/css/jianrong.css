@@ -1,0 +1,98 @@
+body{
+	padding:0px;
+}
+.row{
+	position: relative;
+}
+.log_out{
+	position: absolute;
+	right:15px;
+	top:15px;
+}
+.nav li{
+	height: 40px;
+	width: 150px;
+}
+
+.nav{
+	margin-top: 35px;
+}
+.nav_bg{
+	z-index: 1000;
+}
+.nav_div > ul > li{
+	width: 148px;
+}
+.footer_div{
+	position: relative;
+}
+.footer_one{
+	position: relative;
+	margin-left: 0px;
+	left:-30px;
+}
+.footer_third{
+	position: absolute;
+	top:15px;
+	right:-60px;
+}
+/* index */
+.index_user_center{
+	position: absolute;
+	right:-75px;
+	top:5px;
+}
+
+/* 个人中心 */
+.person_info_panel{
+	height:400px;
+}
+.person_update_panel{
+	height:450px;
+}
+.person_update_panel .btn{
+	margin-top: 15px;
+}
+.person_psw_panel{
+	height:250px;
+}
+.person_psw_panel .btn{
+	margin-top: 15px;
+}
+/* 业务管理 */
+.buy_panel{
+	padding:15px;
+}
+.buy_panel .bg-info{
+	padding:15px;
+}
+
+/* login */
+.login-box{
+	position: relative;
+}
+
+#button{
+	width: 100%;
+	margin-left: -13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

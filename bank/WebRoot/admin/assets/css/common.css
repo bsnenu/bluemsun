@@ -1,0 +1,10 @@
+.ueditor_div{
+	margin: 0px auto;
+	position:relative;
+	width:100%;
+}
+.ueditor{
+	width:1024px;
+	margin:0px auto;
+	position: relative;
+}

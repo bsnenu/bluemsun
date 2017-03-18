@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>管理账号</title>
+		<meta name="keywords" content="Bootstrap模版,Bootstrap模版下载,Bootstrap教程,Bootstrap中文" />
+		<meta name="description" content="JS代码网提供Bootstrap模版,Bootstrap教程,Bootstrap中文翻译等相关Bootstrap插件下载" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- basic styles -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+		<script src="assets/js/ace-extra.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="head_head"></div>
+		<div class="main-container" id="main-container">
+
+			<div class="main-container-inner">
+				<div class="sidebar" id="sidebar">
+					<div class="nav_nav"></div>
+				</div>
+
+				<div class="main-content">
+					<div class="breadcrumbs" id="breadcrumbs">
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home home-icon"></i>
+								<a href="#">首页</a>
+							</li>
+							<li class="active">账号管理</li>
+						</ul><!-- .breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="icon-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- #nav-search -->
+					</div>
+
+					<div class="page-content">
+						<div class="page-header">
+							<h1>
+								管理账号
+							</h1>
+						</div><!-- /.page-header -->
+
+						<div class="row">
+							<p><button class="btn btn-primary add_btn">添加</button> <button class="btn btn-primary">管里账号</button> <button class="btn btn-primary ">批量删除</button></p>
+							<table class="table" border="1">
+								<tr>
+									<th><input type="checkbox"></th>
+									<th>序号</th>
+									<th>会员id</th>
+									<th>注册时间</th>
+									<th>级别</th>
+									<th>推荐人</th>
+									<th>开通时间</th>
+									<th colspan="2">操作</th>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>1</td>
+									<td>ssss25425</td>
+									<td>2015-9-9</td>
+									<td>vip</td>
+									<td>ssss25425</td>
+									<td>2015-9-9</td>
+									<td> <button class="btn btn-primary">停用</button> <button class="btn btn-warning delete_btn">删除</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>1</td>
+									<td>ssss25425</td>
+									<td>2015-9-9</td>
+									<td>vip</td>
+									<td>ssss25425</td>
+									<td>2015-9-9</td>
+									<td> <button class="btn btn-primary">停用</button> <button class="btn btn-warning delete_btn">删除</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>1</td>
+									<td>ssss25425</td>
+									<td>2015-9-9</td>
+									<td>vip</td>
+									<td>ssss25425</td>
+									<td>2015-9-9</td>
+									<td> <button class="btn btn-primary">停用</button> <button class="btn btn-warning delete_btn">删除</button></td>
+								</tr>
+							</table>
+						</div><!-- /.row -->
+						<div class="row">
+							<p>
+								<div class="col-md-6">每页显示<select>
+									<option name="">10</option>
+									<option name="">100</option>
+									<option name="">1000</option>
+									<option name="">10</option>
+								</select>个</div>
+								<nav>
+								  <ul class="pagination col-md-6">
+								    <li>
+								      <a href="#" aria-label="Previous">
+								        <span aria-hidden="true">&laquo;</span>
+								      </a>
+								    </li>
+								    <li><a href="#">1</a></li>
+								    <li><a href="#">2</a></li>
+								    <li><a href="#">3</a></li>
+								    <li><a href="#">4</a></li>
+								    <li><a href="#">5</a></li>
+								    <li>
+								      <a href="#" aria-label="Next">
+								        <span aria-hidden="true">&raquo;</span>
+								      </a>
+								    </li>
+								  </ul>
+								</nav>
+							</p>
+						</div>
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
+			</div><!-- /.main-container-inner -->
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+
+		<script src="assets/js/jquery.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<![endif]-->
+
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+		<script type="text/javascript">
+		 window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+		</script>
+		<![endif]-->
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/typeahead-bs2.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+
+		<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+
+		<script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/jquery.slimscroll.min.js"></script>
+		<script src="assets/js/jquery.easy-pie-chart.min.js"></script>
+		<script src="assets/js/jquery.sparkline.min.js"></script>
+		<script src="assets/js/flot/jquery.flot.min.js"></script>
+		<script src="assets/js/flot/jquery.flot.pie.min.js"></script>
+		<script src="assets/js/flot/jquery.flot.resize.min.js"></script>
+
+		<!-- ace scripts -->
+
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+		<script src="assets/js/common.js"></script>
+
+		<script type="text/javascript">
+			
+		</script>
+		
+	</body>
+</html>
+

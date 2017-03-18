@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>联系人管理</title>
+		<meta name="keywords" content="Bootstrap模版,Bootstrap模版下载,Bootstrap教程,Bootstrap中文" />
+		<meta name="description" content="JS代码网提供Bootstrap模版,Bootstrap教程,Bootstrap中文翻译等相关Bootstrap插件下载" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- basic styles -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+		<script src="assets/js/ace-extra.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="head_head"></div>
+
+		<div class="main-container" id="main-container">
+
+			<div class="main-container-inner">
+				<div class="sidebar" id="sidebar">
+					<div class="nav_nav"></div>
+				</div>
+
+				<div class="main-content">
+					<div class="breadcrumbs" id="breadcrumbs">
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home home-icon"></i>
+								<a href="#">首页</a>
+							</li>
+							<li class="active">联系人管理</li>
+						</ul><!-- .breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="icon-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- #nav-search -->
+					</div>
+
+					<div class="page-content">
+						<div class="page-header">
+							<h1>
+								请管理联系人信息
+							</h1>
+						</div><!-- /.page-header -->
+
+						<div class="row">
+							<p><button class="btn btn-primary add_btn">添加联系人</button></p>
+							<table class="table">
+								<tr>
+									<th>序号</th>
+									<th>姓名</th>
+									<th>电话</th>
+									<th colspan="2">操作</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>简介</td>
+									<td>12432345565</td>
+									<td><button class="btn update_btn">修改</button> <button class="btn btn-warning delete_btn">删除</button></td>
+								</tr>
+							</table>
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
+			</div><!-- /.main-container-inner -->
+		</div><!-- /.main-container -->
+		
+		<!-- 模态框，修改 -->
+    <div class="modal fade" id="update_div">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title ">修改</h4>
+          </div>
+          <div class="modal-body bg-info">
+            <form class="form-horizontal panel panel-primary">
+             	<div class="panel-heading active">
+                        <h3 class="panel-title">联系人</h3>
+                 </div>
+			  	<div class="panel-body person_info_panel">
+			  		
+					  <div class="form-group">
+					    <label  class="col-sm-2 col-sm-offset-3 control-label">姓名 :</label>
+					    <div class="col-sm-4">
+					      <input type="text" class="form-control"  value="nana">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label  class="col-sm-2 col-sm-offset-3 control-label">电话 :</label>
+					    <div class="col-sm-4">
+					      <input type="text" class="form-control"  value="nana">
+					    </div>
+					  </div>
+			  	</div>
+			</form>
+          </div>
+          <div class="modal-footer">
+          	<button type="button" class="btn btn-default" data-dismiss="modal">确定修改</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+		        <!-- 模态框，添加 -->
+    <div class="modal fade" id="add_div">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title ">添加</h4>
+          </div>
+          <div class="modal-body bg-info">
+            <form class="form-horizontal panel panel-primary">
+             	<div class="panel-heading active">
+                        <h3 class="panel-title">联系人</h3>
+                 </div>
+			  	<div class="panel-body person_info_panel">
+			  		
+					  <div class="form-group">
+					    <label  class="col-sm-2 col-sm-offset-3 control-label">姓名 :</label>
+					    <div class="col-sm-4">
+					      <input type="text" class="form-control"  value="nana">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label  class="col-sm-2 col-sm-offset-3 control-label">电话 :</label>
+					    <div class="col-sm-4">
+					      <input type="text" class="form-control"  value="nana">
+					    </div>
+					  </div>
+			  	</div>
+			</form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">确定添加</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+
+		<script src="assets/js/jquery.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<![endif]-->
+
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+		<script type="text/javascript">
+		 window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+		</script>
+		<![endif]-->
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/typeahead-bs2.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+
+		<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+
+		<script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/jquery.slimscroll.min.js"></script>
+		<script src="assets/js/jquery.easy-pie-chart.min.js"></script>
+		<script src="assets/js/jquery.sparkline.min.js"></script>
+		<script src="assets/js/flot/jquery.flot.min.js"></script>
+		<script src="assets/js/flot/jquery.flot.pie.min.js"></script>
+		<script src="assets/js/flot/jquery.flot.resize.min.js"></script>
+
+		<!-- ace scripts -->
+
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+		<script src="assets/js/common.js"></script>
+		<!-- inline scripts related to this page -->
+
+		<script type="text/javascript">
+			$(function(){
+				 $(".update_btn").click(function(){
+			        $("#update_div").modal();
+			    })
+			    
+			    $(".add_btn").click(function(){
+			        $("#add_div").modal();
+			    })
+			})
+		</script>
+		
+	</body>
+</html>
+
